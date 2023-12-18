@@ -1,0 +1,11 @@
+INSERT INTO Credito (tipo, taxa) VALUES ('Pessoal', 4);
+INSERT INTO Credito (tipo, taxa) VALUES ('Garantido', 3);
+INSERT INTO Credito (tipo, taxa) VALUES ('Consignado', 2);
+INSERT INTO User   (username, senha) VALUES ('pauloh', "123456");
+INSERT INTO User (username, senha) VALUES ('guilherme', "teste");
+INSERT INTO User (username, senha) VALUES ('dani', "adm");
+INSERT INTO roles (nome) VALUES ('USER');
+INSERT INTO roles (nome) VALUES ('ADMIN');
+INSERT INTO users_roles (user_id ,roles_id) VALUES ('3' , '2');
+INSERT INTO users_roles (user_id ,roles_id) VALUES ('1' , '1');
+INSERT INTO users_roles (user_id ,roles_id) VALUES ('2' , '2');
