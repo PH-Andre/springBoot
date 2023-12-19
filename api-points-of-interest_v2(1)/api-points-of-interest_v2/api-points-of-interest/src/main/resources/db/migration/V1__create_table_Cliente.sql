@@ -1,4 +1,4 @@
-CREATE TABLE Clientes (
+CREATE TABLE Cliente (
     age INT NOT NULL,
     cpf varchar(500) NOT NULL,
     name varchar(500) NOT NULL,

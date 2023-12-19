@@ -1,15 +1,10 @@
 package br.guilherme.apipointsofinterest.entities;
-
 import org.springframework.hateoas.RepresentationModel;
-
 import br.guilherme.apipointsofinterest.DTOs.ClienteDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-//import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -21,13 +16,13 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = false)
 public class Cliente extends RepresentationModel<Cliente> {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    
+    
 
     @Column(name = "age", nullable = false)
     private int age;
 
+    @Id
     @Column(name = "cpf", nullable = false)
     private String cpf;
 
@@ -37,8 +32,9 @@ public class Cliente extends RepresentationModel<Cliente> {
     @Column(name = "income", nullable = false)
     private double income;
 
+    
     @Column(name = "location", nullable = false)
-    private double location;
+    private String location;
 
     public static Cliente convert(ClienteDTO clienteDTO) {
         var cliente = new Cliente();

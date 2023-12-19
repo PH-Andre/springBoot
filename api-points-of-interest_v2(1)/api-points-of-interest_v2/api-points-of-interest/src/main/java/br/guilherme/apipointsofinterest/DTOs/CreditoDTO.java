@@ -1,12 +1,12 @@
 package br.guilherme.apipointsofinterest.DTOs;
 
 import br.guilherme.apipointsofinterest.entities.Credito;
-// import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
 public class CreditoDTO {
+    
     @NotBlank
     private long id;
 
@@ -15,6 +15,8 @@ public class CreditoDTO {
 
     @NotBlank
     private Double taxa;
+
+    
 
     public static CreditoDTO convert(Credito credito) {
         var creditoDTO = new CreditoDTO();
