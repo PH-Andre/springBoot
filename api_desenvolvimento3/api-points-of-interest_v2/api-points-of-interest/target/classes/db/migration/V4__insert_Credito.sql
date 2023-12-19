@@ -1,0 +1,11 @@
+INSERT INTO Credito (tipo, taxa) VALUES ('Pessoal', 4);
+INSERT INTO Credito (tipo, taxa) VALUES ('Garantido', 3);
+INSERT INTO Credito (tipo, taxa) VALUES ('Consignado', 2);
+INSERT INTO User   (username, senha) VALUES ('pauloh', "$2a$12$ZYfIl8rHXYLQbyJpvYZbQ.5LFHEoXwsCzh9pjXN103UihzKltIo6K");
+INSERT INTO User (username, senha) VALUES ('guilherme', "$2a$12$EvCWda4P4z0lUAy75hB.0uIH8wWL6gzQ2rQOH6Yosn0cPyNf2chwS");
+INSERT INTO User (username, senha) VALUES ('dani', "$2a$12$wSvNNJ0UOXudVb7pyj/qxuuNYUFOj2K53GBGLh80YwQ1tKiCzIFEu");
+INSERT INTO role (nome) VALUES ('USER');
+INSERT INTO role (nome) VALUES ('ADMIN');
+INSERT INTO user_roles (user_id ,roles_id) VALUES ('3' , '2');
+INSERT INTO user_roles (user_id ,roles_id) VALUES ('1' , '1');
+INSERT INTO user_roles (user_id ,roles_id) VALUES ('2' , '2');
